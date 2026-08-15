@@ -141,3 +141,26 @@
 #vertical-tabs-newtab-button:hover {
 	background: var(--gnome-tabbar-tab-hover-background) !important;
 }
+
+/* ---- TEMPORARY DOM PROBE: revert before merge ---- */
+#vertical-tabs .tab-label-container {
+	display: flex !important;
+}
+sidebar-main {
+	border-top: 6px solid #ff0000 !important;
+}
+#sidebar-main {
+	border-bottom: 6px solid #00cc00 !important;
+}
+#tabbrowser-tabs[orient="vertical"][expanded] .tab-background {
+	outline: 3px solid #ff00ff !important;
+}
+#vertical-tabs[visible] {
+	box-shadow: inset 8px 0 #0000ff !important;
+}
+#vertical-tabs-newtab-button {
+	outline: 3px solid #ff8800 !important;
+}
+#vertical-pinned-tabs-container {
+	outline: 3px solid #00cccc !important;
+}
