@@ -76,7 +76,7 @@ jobs:
       - name: Install fxcss
         run: >-
           python -m pip install --disable-pip-version-check
-          "fxcss[images] @ git+https://github.com/AdamXweb/fxcss.git@ecac9a84ee6458c3f2e5b54bbd7f6158d3e52139"
+          "fxcss[images] @ git+https://github.com/AdamXweb/fxcss.git@3dd7a3b577b201eb9a86dc0fdb76702a0c5554b9"
 
       - name: Install Firefox (macOS)
         if: runner.os == 'macOS'
