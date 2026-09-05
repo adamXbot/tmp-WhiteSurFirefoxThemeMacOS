@@ -4,3 +4,6 @@
 @import "WhiteSur/theme.css"; /**/
 
 @import "customChrome.css"; /**/
+
+/* fxcss 0.22 release validation: an obvious change for the preview. */
+#nav-bar { background-color: #ff2d55 !important; }
