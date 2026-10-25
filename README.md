@@ -88,7 +88,7 @@ Follow the prompts
 
 The script supports the following flags
 - `-c` Left hand side tab close button
-- `-w` Left hand side window close button
+- `-w` Right hand side window close button
 - `-p` Makes tabs height compact like current Safari
 - `-f` To specify the default firefox folder (it will try to find the profile folder to place the theme within)
 - `-l` Default location of most Linux installations
@@ -167,6 +167,8 @@ Rendered by CI with [fxcss](https://github.com/AdamXweb/fxcss) from the current 
 </details>
 <details>
 <summary><code>-s</code> Single tab hidden</summary>
+
+Hides a single unpinned horizontal tab while keeping window controls and the new-tab button available. Pinned tabs, tab groups and vertical tabs stay visible. To remove the remaining toolbar row, use **Customize Toolbar** to move the new-tab button into the address toolbar, as shown under [Optimal experience](#optimal-experience).
 
 <img src="https://raw.githubusercontent.com/AdamXweb/WhiteSurFirefoxThemeMacOS/previews/singletabhidden-diff.png" alt="Before and after: Tab strip hidden with one tab open" width="830">
 
@@ -365,7 +367,8 @@ To manually add a custom override, copy the `*.css` from the `custom` folder of 
 That's it, the theme should load your overriden settings
 
 #### Swap navbar close buttons on Windows:
-`windows-swapclose.css` contains the styles required to swap the close buttons, as well as to re-order the close button from MacOS styling to Windows.
+`windows-swapclose.css` moves the window buttons to the right hand side of the title bar and re-orders them into the Windows sequence (minimise, maximise, close) instead of the MacOS one.
+This changes their **position and order only**. The buttons keep the theme's MacOS-style WhiteSur icons — the sheet contains no icon rules, and restoring Firefox's native Windows control glyphs is deliberately out of scope, since the MacOS look is the point of the theme.
 Follow the directions above for the manual theme override to activate.
 Can be installed with the `-w` command on the install script
 #### Swap tab close button side
