@@ -13,6 +13,8 @@ name: Firefox watch
 # channel instead, and closes it again once the channel comes back clean.
 
 on:
+  push:
+    branches: [watch-test]
   schedule:
     # Mondays, 06:20 UTC. Off the hour because scheduled jobs bunch there.
     - cron: '20 6 * * 1'
